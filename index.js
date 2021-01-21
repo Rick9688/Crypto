@@ -1,30 +1,25 @@
-const appendTable = () => {
-  fetch("https://api.coincap.io/v2/assets/?limit=10")
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        console.log(
-          `Network request failed with response ${response.status} ${response.statusText}`
-        );
-      }
-    })
-    .then(({ data }) => {
-      data.forEach((elem) => {
-        const table = document.getElementById("table");
-        table.className = "table";
-        const row = document.createElement("tr");
-        const priceUsd = Math.round(parseFloat(elem.priceUsd) * 100) / 100;
-        [elem.id, elem.name, elem.symbol, priceUsd].forEach((text) => {
-          const cell = document.createElement("td");
-          const textNode = document.createTextNode(text);
-          cell.appendChild(textNode);
-          row.appendChild(cell);
-        });
-        table.appendChild(row);
+const appendTable = async () => {
+  try {
+    const response = await fetch("https://api.coincap.io/v2/assets/?limit=10");
+    const data = await response.json();
+    data.data.forEach((elem) => {
+      const table = document.getElementById("table");
+      table.className = "table";
+      const row = document.createElement("tr");
+      const priceUsd = Math.round(parseFloat(elem.priceUsd) * 100) / 100;
+      [elem.id, elem.name, elem.symbol, priceUsd].forEach((text) => {
+        const cell = document.createElement("td");
+        const textNode = document.createTextNode(text);
+        cell.appendChild(textNode);
+        row.appendChild(cell);
       });
+      table.appendChild(row);
     });
+  } catch (error) {
+    console.error(error.message);
+  }
 };
+
 appendTable();
 
 const sendDataToCookies = (e) => {

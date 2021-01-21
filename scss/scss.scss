@@ -1,5 +1,4 @@
 %title_font {
-  font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -9,38 +8,33 @@
 
 %header_font {
   font-size: 2.7rem;
-  line-height: 102px;
-  letter-spacing: 0.02em;
+  line-height: 8rem;
+  letter-spacing: 0.02rem;
   color: #ffffff;
-  top: 193px;
-  left: 48px;
 }
 
 %header_description_font {
-  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 74px;
-  letter-spacing: 0.02em;
+  line-height: 4rem;
+  letter-spacing: 0.04rem;
   color: #ffffff;
 }
 
 %logo_title_font {
-  font-family: Nunito;
   font-style: normal;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #ffffff;
 }
 
 %description_font {
-  font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 37px;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
   text-align: center;
   letter-spacing: 0.02em;
   color: #333333;
@@ -48,21 +42,18 @@
 
 %ref_description_font {
   position: relative;
-  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #333333;
 }
 
 %footer_font {
-  height: 25px;
-  font-family: Nunito;
+  height: 1.7rem;
   font-style: italic;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -148,6 +139,7 @@ body {
   width: 100vw;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: Nunito;
 }
 
 .wrapper {
@@ -689,7 +681,6 @@ body {
     display: flex;
     flex-direction: column;
     .item_1 {
-      font-family: Nunito;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -759,7 +750,6 @@ body {
 
   .low {
     @extend %footer_font;
-    font-family: Nunito;
     font-style: italic;
     font-weight: 800;
     font-size: 18px;
@@ -979,7 +969,6 @@ body {
           text-transform: uppercase;
           color: #ffffff;
           font-weight: 700;
-          font-family: Nunito;
           display: block;
         }
       }

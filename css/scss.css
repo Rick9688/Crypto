@@ -1,5 +1,4 @@
 .section_1 .title_view_wrapper .title, .section_2 .title_view_wrapper .title, .section_3 .title_view_wrapper .title {
-  font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -8,55 +7,47 @@
 
 .header_title {
   font-size: 2.7rem;
-  line-height: 102px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  top: 193px;
-  left: 48px; }
+  line-height: 8rem;
+  letter-spacing: 0.02rem;
+  color: #ffffff; }
 
 .header_description {
-  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 74px;
-  letter-spacing: 0.02em;
+  line-height: 4rem;
+  letter-spacing: 0.04rem;
   color: #ffffff; }
 
 .header .logo_title {
-  font-family: Nunito;
   font-style: normal;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #ffffff; }
 
 html, .greeting .description, .section_2 .title_view_wrapper .description, .section_3 .title_view_wrapper .description {
-  font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 37px;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
   text-align: center;
   letter-spacing: 0.02em;
   color: #333333; }
 
 .greeting .title, .section_1 .title_view_wrapper .view .ref_description, .section_2 .title_view_wrapper .view .ref_description, .section_3 .title_view_wrapper .view .ref_description {
   position: relative;
-  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #333333; }
 
 .footer .block_1 .item_2, .footer .low {
-  height: 25px;
-  font-family: Nunito;
+  height: 1.7rem;
   font-style: italic;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.7); }
 
 /* nunito-regular - latin */
@@ -117,7 +108,8 @@ html {
 body {
   width: 100vw;
   margin: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: Nunito; }
 
 .wrapper {
   width: 100%;
@@ -507,7 +499,6 @@ body {
     display: flex;
     flex-direction: column; }
     .footer .block_1 .item_1 {
-      font-family: Nunito;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -552,7 +543,6 @@ body {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.7); }
   .footer .low {
-    font-family: Nunito;
     font-style: italic;
     font-weight: 800;
     font-size: 18px;
@@ -705,7 +695,6 @@ body {
           text-transform: uppercase;
           color: #ffffff;
           font-weight: 700;
-          font-family: Nunito;
           display: block; }
   #burger:checked ~ nav {
     height: 100%;
